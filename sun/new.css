@@ -1,0 +1,90 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body,html{
+    width: 100%;
+    height: 100%;
+} 
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(space.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 5px;
+    margin-left: 9px;
+}
+.header a:hover{
+    background: rgba(255, 255, 255, 0.244);
+    border-radius: 5px;
+}
+.header .icon{
+    background: rgba(255, 255, 255, 0.242);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    background-image: url(sun.png);
+    background-size: cover;
+    box-shadow: 0 0 50px rgba(255, 68, 0, 0.717);
+    border-radius: 50%;
+    animation: sakib 40s linear infinite;
+}
+
+@keyframes sakib{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.one{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(earth.png);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+    background-size: cover;
+    animation: sakib 20s linear infinite alternate-reverse;
+  
+}
+@media (max-width:600px) {
+    .container{
+        width: 300px;
+        height: 300px;
+    }
+    .one{
+        width: 40px;
+        height: 40px;
+    }
+}
